@@ -3,13 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>My Portfolio</title>
+  <title>Mathias Kieti — Developer</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <!-- ── HEADER ── -->
   <header class="site-header">
     <div class="container">
-      <a href="index.html" class="logo">MyPortfolio</a>
+      <a href="index.html" class="logo">mk.</a>
       <button id="menuToggle" class="menu-toggle" aria-expanded="false">☰</button>
       <nav id="mainNav" class="main-nav">
         <a href="index.html" aria-current="page">Home</a>
@@ -20,100 +22,134 @@
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1>Hello 🤗 ... Welcome to my website.</h1>
-        <p>Responsive developer portfolio and project showcase.</p>
-        <a class="btn" href="projects.html">View Projects</a>
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <p class="hero-eyebrow"><span class="dot"></span> Available for work</p>
+        <h1>
+          <span class="name">Mathias<br>Kieti</span>
+          <span class="role">Software Developer &amp; Engineer</span>
+        </h1>
+        <p class="hero-desc">
+          I build fast, clean, and thoughtful digital experiences. 
+          From interactive UIs to AI-powered tools — if it lives on the web, I'm probably building it.
+        </p>
+        <div class="hero-cta">
+          <a href="projects.html" class="btn btn-primary">View Projects →</a>
+          <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+        </div>
       </div>
-    </section>
-
-    <section class="featured container">
-      <h2>Featured Projects</h2>
-      <div class="cards">
-        <article class="card project-card">
-          <img src="images/AI studybuddy.avif" alt="AI studybuddy">
-          <h3>Project One</h3>
-          <p>AI studybuddy</p>
-        </article>
-
-        <article class="card project-card">
-          <img src="images/recipee.jpg" alt="Recipe suggestor app">
-          <h3>Project Two</h3>
-          <p>Recipe suggestor app</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Lightbox container -->
-    <div id="lightbox">
-      <span class="close">&times;</span>
-      <img id="lightbox-img" alt="">
     </div>
-  </main>
+  </section>
 
-  <footer class="site-footer">
-  <div class="container">
-    <p>&copy; 2025 Mathias_Kieti</p>
-    
-    <nav class="social-icons" aria-label="Social media">
-      
-      <!-- GitHub -->
-      <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" title="GitHub">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" viewBox="0 0 24 24">
-          <path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.29 3.438 9.77 8.205 11.36.6.113.82-.26.82-.577 
-          0-.286-.012-1.233-.017-2.235-3.338.725-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756
-          -1.09-.744.082-.729.082-.729 1.205.085 1.84 1.238 1.84 1.238 1.07 1.835 2.807 1.305 
-          3.492.998.108-.774.418-1.305.762-1.605-2.665-.305-5.467-1.335-5.467-5.935 
-          0-1.312.468-2.382 1.236-3.222-.124-.303-.536-1.527.117-3.176 0 0 
-          1.008-.322 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.552 
-          3.297-1.23 3.297-1.23.655 1.649.243 2.873.119 3.176.77.84 
-          1.235 1.91 1.235 3.222 0 4.61-2.807 5.627-5.48 5.922.43.372.823 1.103.823 2.222 
-          0 1.605-.015 2.897-.015 3.292 0 .32.216.694.825.576C20.565 22.268 
-          24 17.79 24 12.5 24 5.87 18.63.5 12 .5z"/>
-        </svg>
-      </a>
-      
-      <!-- LinkedIn -->
-      <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0077B5" viewBox="0 0 24 24">
-          <path d="M20.447 20.452h-3.554v-5.569c0-1.327-.027-3.037-1.852-3.037-1.853 
-          0-2.137 1.445-2.137 2.939v5.667H9.351V9h3.414v1.561h.049c.476-.9 
-          1.637-1.852 3.372-1.852 3.605 0 4.268 2.373 4.268 5.459v6.284zM5.337 
-          7.433c-1.144 0-2.069-.926-2.069-2.07 0-1.143.925-2.069 
-          2.069-2.069 1.144 0 2.07.926 2.07 2.069 0 1.144-.926 
-          2.07-2.07 2.07zM6.765 20.452H3.91V9h2.855v11.452zM22.225 
-          0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 
-          1.771 24h20.451C23.206 24 24 23.226 24 22.271V1.729C24 
-          .774 23.206 0 22.225 0z"/>
-        </svg>
-      </a>
-      
-      <!-- Twitter -->
-      <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" title="Twitter">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1DA1F2" viewBox="0 0 24 24">
-          <path d="M23.954 4.57c-.885.392-1.83.656-2.825.775 
-          1.014-.61 1.794-1.574 2.163-2.724-.95.564-2.005.974-3.127 
-          1.195-.897-.955-2.178-1.55-3.594-1.55-2.72 0-4.927 
-          2.206-4.927 4.924 0 .39.045.765.127 1.124C7.691 
-          8.094 4.066 6.13 1.64 3.162c-.427.73-.666 1.577-.666 
-          2.475 0 1.708.87 3.216 2.188 4.099-.807-.025-1.566-.248-2.228
-          -.616v.062c0 2.385 1.693 4.374 3.946 
-          4.827-.413.112-.85.171-1.296.171-.316 0-.624-.03-.927
-          -.088.625 1.953 2.444 3.374 4.6 
-          3.414-1.68 1.318-3.797 2.105-6.096 
-          2.105-.395 0-.788-.023-1.175-.068 2.179 1.397 
-          4.768 2.213 7.557 2.213 9.054 0 14-7.496 
-          14-13.986 0-.21-.004-.423-.014-.633.962-.693 
-          1.8-1.56 2.46-2.548z"/>
-        </svg>
-      </a>
-    </nav>
+  <!-- ── MARQUEE ── -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span>JavaScript</span><span>·</span>
+      <span>Java</span><span>·</span>
+      <span>Python</span><span>·</span>
+      <span>HTML5</span><span>·</span>
+      <span>CSS3</span><span>·</span>
+      <span class="hi">Open to Collab</span><span>·</span>
+      <span>Responsive Design</span><span>·</span>
+      <span>AI Integrations</span><span>·</span>
+      <span>Git &amp; GitHub</span><span>·</span>
+      <span class="hi">Based in Nairobi</span><span>·</span>
+      <span>OpenAI API</span><span>·</span>
+      <span>HTML5</span><span>·</span>
+      <span>CSS3</span><span>·</span>
+      <span>JavaScript</span><span>·</span>
+      <span class="hi">Open to Collab</span><span>·</span>
+      <span>Responsive Design</span><span>·</span>
+      <span>AI Integrations</span><span>·</span>
+      <span>Git &amp; GitHub</span><span>·</span>
+      <span class="hi">Based in Nairobi</span><span>·</span>
+      <span>OpenAI API</span><span>·</span>
+    </div>
   </div>
-</footer>
 
+  <!-- ── FEATURED PROJECTS ── -->
+  <section class="projects-section">
+    <div class="container">
+      <p class="section-label">// featured work</p>
+      <h2>Things I've Built</h2>
+      <p class="sub">A couple of projects I'm particularly proud of.</p>
+      <div class="cards">
 
+        <article class="card project-card">
+          <div class="card-img-placeholder">🤖</div>
+          <img class="card-img" src="images/AI studybuddy.avif" alt="AI studybuddy"> 
+          <div class="card-body">
+            <p class="card-tag">AI · EdTech</p>
+            <h3>AI Studybuddy</h3>
+            <p>An AI assistant that turns your notes into quizzes, flashcards, and summaries — personalized to how you learn.</p>
+          </div>
+          <div class="card-footer">
+            <span class="tech-badge">HTML</span>
+            <span class="tech-badge">CSS</span>
+            <span class="tech-badge">JS</span>
+            <span class="tech-badge">OpenAI</span>
+          </div>
+          <div class="extra-details">
+            <p>Have you been wondering if AI can help you learn? The solution is here. This AI study buddy generates quizzes, flashcards, and summaries based on the topics you want to study. Input your topic notes, and you'll have questions ready for learning.</p>
+          </div>
+          <button class="details-btn">View Details</button>
+        </article>
+
+        <article class="card project-card">
+          <div class="card-img-placeholder">🍽️</div>
+          <img class="card-img" src="images/recipee.jpg" alt="Recipe generator"> 
+          <div class="card-body">
+            <p class="card-tag">AI · Lifestyle</p>
+            <h3>Recipe Generator</h3>
+            <p>Tell it what you have in the fridge. Get a full recipe with steps. No more "what's for dinner?" stress.</p>
+          </div>
+          <div class="card-footer">
+            <span class="tech-badge">HTML</span>
+            <span class="tech-badge">CSS</span>
+            <span class="tech-badge">JS</span>
+            <span class="tech-badge">OpenAI</span>
+          </div>
+          <div class="extra-details">
+            <p>Enter your ingredients and get a step-by-step recipe suggestion instantly. Advanced AI algorithms provide personalized recipe recommendations that suit your taste and dietary preferences. Bon appétit! 😋</p>
+          </div>
+          <button class="details-btn">View Details</button>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" alt="">
+  </div>
+
+  <!-- ── FOOTER ── -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Mathias_Kieti</p>
+      <nav class="social-icons" aria-label="Social media">
+        <a href="https://github.com/Mathias_Kieti" target="_blank" rel="noopener noreferrer" title="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+            <path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.29 3.438 9.77 8.205 11.36.6.113.82-.26.82-.577 0-.286-.012-1.233-.017-2.235-3.338.725-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.744.082-.729.082-.729 1.205.085 1.84 1.238 1.84 1.238 1.07 1.835 2.807 1.305 3.492.998.108-.774.418-1.305.762-1.605-2.665-.305-5.467-1.335-5.467-5.935 0-1.312.468-2.382 1.236-3.222-.124-.303-.536-1.527.117-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.552 3.297-1.23 3.297-1.23.655 1.649.243 2.873.119 3.176.77.84 1.235 1.91 1.235 3.222 0 4.61-2.807 5.627-5.48 5.922.43.372.823 1.103.823 2.222 0 1.605-.015 2.897-.015 3.292 0 .32.216.694.825.576C20.565 22.268 24 17.79 24 12.5 24 5.87 18.63.5 12 .5z"/>
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/Mathias_Kieti" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.327-.027-3.037-1.852-3.037-1.853 0-2.137 1.445-2.137 2.939v5.667H9.351V9h3.414v1.561h.049c.476-.9 1.637-1.852 3.372-1.852 3.605 0 4.268 2.373 4.268 5.459v6.284zM5.337 7.433c-1.144 0-2.069-.926-2.069-2.07 0-1.143.925-2.069 2.069-2.069 1.144 0 2.07.926 2.07 2.069 0 1.144-.926 2.07-2.07 2.07zM6.765 20.452H3.91V9h2.855v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.206 24 24 23.226 24 22.271V1.729C24 .774 23.206 0 22.225 0z"/>
+          </svg>
+        </a>
+        <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" title="Twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+            <path d="M23.954 4.57c-.885.392-1.83.656-2.825.775 1.014-.61 1.794-1.574 2.163-2.724-.95.564-2.005.974-3.127 1.195-.897-.955-2.178-1.55-3.594-1.55-2.72 0-4.927 2.206-4.927 4.924 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.162c-.427.73-.666 1.577-.666 2.475 0 1.708.87 3.216 2.188 4.099-.807-.025-1.566-.248-2.228-.616v.062c0 2.385 1.693 4.374 3.946 4.827-.413.112-.85.171-1.296.171-.316 0-.624-.03-.927-.088.625 1.953 2.444 3.374 4.6 3.414-1.68 1.318-3.797 2.105-6.096 2.105-.395 0-.788-.023-1.175-.068 2.179 1.397 4.768 2.213 7.557 2.213 9.054 0 14-7.496 14-13.986 0-.21-.004-.423-.014-.633.962-.693 1.8-1.56 2.46-2.548z"/>
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </footer>
 
   <script src="js/main.js"></script>
   <script src="js/lightbox.js" defer></script>

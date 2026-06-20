@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Projects</title>
+  <title>Projects — Mathias Kieti</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
   <header class="site-header">
     <div class="container">
-      <a href="index.html" class="logo">MyPortfolio</a>
+      <a href="index.html" class="logo">mk.</a>
       <button id="menuToggle" class="menu-toggle" aria-expanded="false">☰</button>
       <nav id="mainNav" class="main-nav">
         <a href="index.html">Home</a>
@@ -21,49 +22,65 @@
   </header>
 
   <main>
-    <section class="container projects">
-      <h1>Projects</h1>
-      <p>Here are some of the projects I’ve been working on. Click a card for more details.</p>
+    <div class="page-hero container">
+      <p class="section-label">// my work</p>
+      <h1>Things I've<br><em>shipped.</em></h1>
+    </div>
 
-      <div class="cards">
-        <!-- Project 1 -->
-        <article class="card project-card">
-          <img src="images/AI studybuddy.avif" alt="AI studybuddy">
-          <h3>AI studybuddy</h3>
-          <p>This is an AI assistant which helps learners study using quizzes, flashcards, and summaries.</p>
-          <button class="btn details-btn">View Details</button>
+    <section class="projects-section">
+      <div class="container">
+        <p class="sub">Click a card to read more about each project.</p>
+        <div class="cards">
 
-          <div class="extra-details">
-            <p>Have you been wondering if AI can help you learn? The solution is here.  
-               This AI study buddy generates quizzes, flashcards, and summaries based on the topics you want to study.  
-               Input your topic notes, and you’ll have questions ready for learning. It uses advanced AI algorithms to provide personalized study materials that adapt to your learning style.  
-               Study anywhere, anytime, at your own pace, and achieve your academic goals with ease.</p>
-            <p><strong>Technologies used:</strong> HTML, CSS, JavaScript, OpenAI API.</p>
-          </div>
-        </article>
+          <article class="card project-card">
+            <div class="card-img-placeholder">🤖</div>
+            <!-- <img class="card-img" src="images/AI studybuddy.avif" alt="AI studybuddy"> -->
+            <div class="card-body">
+              <p class="card-tag">AI · EdTech</p>
+              <h3>AI Studybuddy</h3>
+              <p>An AI assistant which helps learners study using quizzes, flashcards, and summaries.</p>
+            </div>
+            <div class="card-footer">
+              <span class="tech-badge">HTML</span>
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">JS</span>
+              <span class="tech-badge">OpenAI</span>
+            </div>
+            <div class="extra-details">
+              <p>Have you been wondering if AI can help you learn? The solution is here. This AI study buddy generates quizzes, flashcards, and summaries based on the topics you want to study. Input your topic notes, and you'll have questions ready for learning. It uses advanced AI algorithms to provide personalized study materials that adapt to your learning style. Study anywhere, anytime, at your own pace.</p>
+            </div>
+            <button class="details-btn">View Details</button>
+          </article>
 
-        <!-- Project 2 -->
-        <article class="card project-card">
-          <img src="images/recipee.jpg" alt="Recipe generator">
-          <h3>Recipe generator</h3>
-          <p>Tell it what food you want to prepare, and it suggests a suitable recipe.</p>
-          <button class="btn details-btn">View Details</button>
+          <article class="card project-card">
+            <div class="card-img-placeholder">🍽️</div>
+            <!-- <img class="card-img" src="images/recipee.jpg" alt="Recipe generator"> -->
+            <div class="card-body">
+              <p class="card-tag">AI · Lifestyle</p>
+              <h3>Recipe Generator</h3>
+              <p>Tell it what food you want to prepare, and it suggests a suitable recipe. Simple as that.</p>
+            </div>
+            <div class="card-footer">
+              <span class="tech-badge">HTML</span>
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">JS</span>
+              <span class="tech-badge">OpenAI</span>
+            </div>
+            <div class="extra-details">
+              <p>This AI recipe assistant helps you quickly find recipes based on available ingredients or desired dishes. Enter your ingredients, and get a step-by-step recipe suggestion instantly. Personalized recommendations that suit your taste and dietary preferences. Bon appétit! 😋</p>
+            </div>
+            <button class="details-btn">View Details</button>
+          </article>
 
-          <div class="extra-details">
-            <p>This AI recipe assistant helps you quickly find recipes based on available ingredients or desired dishes.  
-               Enter your ingredients, and get a step-by-step recipe suggestion instantly.
-                It uses advanced AI algorithms to provide personalized recipe recommendations that suit your taste and dietary preferences.
-                Cook delicious meals with ease and impress your friends and family with your culinary skills.
-                Say goodbye to mealtime stress and hello to effortless cooking!
-                Enjoy cooking with the help of AI!
-                Bon appétit!😋              
-              </p>
-            <p><strong>Technologies used:</strong> HTML, CSS, JavaScript, OpenAI API.</p>
-          </div>
-        </article>
+        </div>
       </div>
     </section>
   </main>
+
+  <div id="lightbox">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" alt="">
+  </div>
 
   <footer class="site-footer">
     <div class="container">

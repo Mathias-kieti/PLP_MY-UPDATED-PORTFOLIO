@@ -1,21 +1,19 @@
-const lightbox = document.getElementById('lightbox');
-const lightboxImg = document.getElementById('lightbox-img');
-const images = document.querySelectorAll('.project-card img');
-const closeBtn = document.querySelector('#lightbox .close');
+const lb    = document.getElementById('lightbox');
+const lbImg = document.getElementById('lightbox-img');
 
-images.forEach(img => {
+document.querySelectorAll('.project-card img').forEach(img => {
+  img.style.cursor = 'zoom-in';
   img.addEventListener('click', () => {
-    lightboxImg.src = img.src;
-    lightbox.classList.add('show');
+    lbImg.src = img.src;
+    lbImg.alt = img.alt;
+    lb.classList.add('active');
   });
 });
 
-closeBtn.addEventListener('click', () => {
-  lightbox.classList.remove('show');
-});
-
-lightbox.addEventListener('click', e => {
-  if(e.target === lightbox){
-    lightbox.classList.remove('show');
-  }
-});
+if (lb) {
+  lb.addEventListener('click', e => {
+    if (e.target !== lbImg) lb.classList.remove('active');
+  });
+  document.querySelector('.close')?.addEventListener('click', () => lb.classList.remove('active'));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') lb.classList.remove('active'); });
+}
