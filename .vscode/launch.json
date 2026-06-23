@@ -5,9 +5,10 @@
       "type": "firefox",
       "request": "launch",
       "name": "Launch Firefox",
-      "url": "http://localhost:5500",
+      "url": "http://localhost:3000",
       "webRoot": "${workspaceFolder}",
-      "reAttach": true
+      "reAttach": true,
+      "firefoxExecutable": "/home/kieti/.bin/firefox-flatpak"
     }
   ]
 }

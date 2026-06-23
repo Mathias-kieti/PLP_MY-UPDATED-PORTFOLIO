@@ -21,6 +21,8 @@
     </div>
   </header>
 
+  <div id="cursor" aria-hidden="true"></div>
+
   <main>
     <div class="page-hero container">
       <p class="section-label">// my work</p>
@@ -29,36 +31,109 @@
 
     <section class="projects-section">
       <div class="container">
-        <p class="sub">Click a card to read more about each project.</p>
+        <p class="sub">Real projects. Real code. Click any card for more details.</p>
         <div class="cards">
 
+          <!-- AgriAI -->
           <article class="card project-card">
-            <div class="card-img-placeholder">🤖</div>
-            <!-- <img class="card-img" src="images/AI studybuddy.avif" alt="AI studybuddy"> -->
+            <img class="card-img" src="images/agriai.jpg" alt="AgriAI">
             <div class="card-body">
-              <p class="card-tag">AI · EdTech</p>
-              <h3>AI Studybuddy</h3>
-              <p>An AI assistant which helps learners study using quizzes, flashcards, and summaries.</p>
+              <p class="card-tag">ML · AgriTech</p>
+              <h3>AgriAI</h3>
+              <p>ML-powered system helping farmers predict crop prices and optimal planting time using weather and market trends.</p>
             </div>
             <div class="card-footer">
-              <span class="tech-badge">HTML</span>
-              <span class="tech-badge">CSS</span>
-              <span class="tech-badge">JS</span>
-              <span class="tech-badge">OpenAI</span>
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">Django</span>
+              <span class="tech-badge">PostgreSQL</span>
+              <span class="tech-badge">XGBoost</span>
             </div>
             <div class="extra-details">
-              <p>Have you been wondering if AI can help you learn? The solution is here. This AI study buddy generates quizzes, flashcards, and summaries based on the topics you want to study. Input your topic notes, and you'll have questions ready for learning. It uses advanced AI algorithms to provide personalized study materials that adapt to your learning style. Study anywhere, anytime, at your own pace.</p>
+              <p>Built with a React frontend and a Django backend, AgriAI uses Linear Regression, Random Forest, and XGBoost models trained on historical weather and market data to give farmers accurate predictions on when to plant and what prices to expect at harvest.</p>
+              <div class="detail-links">
+                <a href="https://github.com/Mathias-kieti/AgriAI-PROJECT" target="_blank" rel="noopener" class="detail-link">⌥ GitHub</a>
+              </div>
             </div>
             <button class="details-btn">View Details</button>
           </article>
 
+          <!-- Financial Tracker -->
           <article class="card project-card">
-            <div class="card-img-placeholder">🍽️</div>
-            <!-- <img class="card-img" src="images/recipee.jpg" alt="Recipe generator"> -->
+            <img class="card-img" src="images/fintracker.jpg" alt="Financial Tracker">
+            <div class="card-body">
+              <p class="card-tag">FinTech · Full-Stack</p>
+              <h3>Personal Financial Tracker</h3>
+              <p>Web app for tracking expenses, managing budgets, savings, and bills — all in one place.</p>
+            </div>
+            <div class="card-footer">
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">Express</span>
+              <span class="tech-badge">MongoDB</span>
+            </div>
+            <div class="extra-details">
+              <p>A full MERN-stack application with user authentication, expense categorisation, budget tracking, and a clean dashboard with data visualisations. Deployed on Vercel.</p>
+              <div class="detail-links">
+                <a href="https://github.com/Mathias-kieti/personal_financial_tracker" target="_blank" rel="noopener" class="detail-link">⌥ GitHub</a>
+                <a href="https://personal-financial-tracker-ten.vercel.app" target="_blank" rel="noopener" class="detail-link">↗ Live</a>
+              </div>
+            </div>
+            <button class="details-btn">View Details</button>
+          </article>
+
+          <!-- Banking System -->
+          <article class="card project-card">
+            <img class="card-img" src="images/banking.jpg" alt="Banking System">
+            <div class="card-body">
+              <p class="card-tag">FinTech · Java</p>
+              <h3>Banking System</h3>
+              <p>Secure simulation of real-world banking — account management, transactions, and balance tracking.</p>
+            </div>
+            <div class="card-footer">
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">Spring Boot</span>
+              <span class="tech-badge">MySQL</span>
+            </div>
+            <div class="extra-details">
+              <p>Features account creation, deposit/withdrawal, balance inquiry, transaction history, secure authentication, and proper error handling for invalid operations like insufficient funds. Built with a Spring Boot REST API and React frontend.</p>
+              <div class="detail-links">
+                <a href="https://github.com/Mathias-kieti/BANKING-SERVICE" target="_blank" rel="noopener" class="detail-link">⌥ GitHub</a>
+                <a href="https://mybankingservices.netlify.app/" target="_blank" rel="noopener" class="detail-link">↗ Live</a>
+              </div>
+            </div>
+            <button class="details-btn">View Details</button>
+          </article>
+
+          <!-- AI Study Buddy -->
+          <article class="card project-card">
+            <img class="card-img" src="images/AI studybuddy.avif" alt="AI Study Buddy">
+            <div class="card-body">
+              <p class="card-tag">AI · EdTech</p>
+              <h3>AI Studybuddy</h3>
+              <p>AI academic assistant that summarizes notes, generates quizzes, flashcards, and study content.</p>
+            </div>
+            <div class="card-footer">
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">Hugging Face</span>
+              <span class="tech-badge">MongoDB</span>
+            </div>
+            <div class="extra-details">
+              <p>Built during a hackathon, this tool lets learners paste in their notes and instantly get back quizzes, flashcards, and summaries personalised to the content. Uses Hugging Face transformer models for NLP tasks.</p>
+              <div class="detail-links">
+                <a href="https://github.com/Mathias-kieti/HACKATHON-CHALLENGE---study-buddy---" target="_blank" rel="noopener" class="detail-link">⌥ GitHub</a>
+              </div>
+            </div>
+            <button class="details-btn">View Details</button>
+          </article>
+
+          <!-- Recipe Generator -->
+          <article class="card project-card">
+            <img class="card-img" src="images/recipee.jpg" alt="Recipe Generator">
             <div class="card-body">
               <p class="card-tag">AI · Lifestyle</p>
               <h3>Recipe Generator</h3>
-              <p>Tell it what food you want to prepare, and it suggests a suitable recipe. Simple as that.</p>
+              <p>Tell it what you have in the fridge. Get a full recipe with steps. No more "what's for dinner?" stress.</p>
             </div>
             <div class="card-footer">
               <span class="tech-badge">HTML</span>
@@ -67,7 +142,28 @@
               <span class="tech-badge">OpenAI</span>
             </div>
             <div class="extra-details">
-              <p>This AI recipe assistant helps you quickly find recipes based on available ingredients or desired dishes. Enter your ingredients, and get a step-by-step recipe suggestion instantly. Personalized recommendations that suit your taste and dietary preferences. Bon appétit! 😋</p>
+              <p>Enter your ingredients and get a step-by-step recipe suggestion instantly. Uses the OpenAI API to generate personalised recipe recommendations that match your available ingredients and dietary preferences. Bon appétit! 😋</p>
+            </div>
+            <button class="details-btn">View Details</button>
+          </article>
+
+          <!-- Portfolio -->
+          <article class="card project-card">
+            <img class="card-img" src="images/portfolio.jpg" alt="Portfolio">
+            <div class="card-body">
+              <p class="card-tag">Web · Design</p>
+              <h3>Personal Portfolio</h3>
+              <p>This site. Built from scratch with pure HTML, CSS, and JS — no frameworks, no templates.</p>
+            </div>
+            <div class="card-footer">
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">Tailwind</span>
+            </div>
+            <div class="extra-details">
+              <p>A fully responsive, dark-mode creative portfolio with custom animations, a scrolling marquee, lightbox, and a custom cursor. All hand-coded.</p>
+              <div class="detail-links">
+                <a href="https://github.com/Mathias-kieti/PLP_MY-UPDATED-PORTFOLIO" target="_blank" rel="noopener" class="detail-link">⌥ GitHub</a>
+              </div>
             </div>
             <button class="details-btn">View Details</button>
           </article>

@@ -742,3 +742,213 @@ form button[type="submit"]:hover {
   object-fit: cover;
   border-radius: var(--radius);
 }
+
+/* ══════════════════════════════
+   CUSTOM CURSOR
+══════════════════════════════ */
+*, *::before, *::after { cursor: none !important; }
+
+#cursor {
+  position: fixed;
+  top: 0; left: 0;
+  width: 20px; height: 20px;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform .12s ease, opacity .2s;
+}
+
+/* outer ring */
+#cursor::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 1.5px solid var(--violet);
+  border-radius: 50%;
+  transition: transform .18s ease, border-color .2s;
+}
+
+/* inner dot */
+#cursor::after {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 5px; height: 5px;
+  background: var(--lime);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform .1s ease;
+}
+
+/* hover state — expands ring, dot disappears */
+#cursor.hovered::before {
+  transform: scale(2.4);
+  border-color: var(--lime);
+}
+#cursor.hovered::after {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+/* click burst */
+#cursor.clicking::before {
+  transform: scale(.6);
+  border-color: var(--lime);
+}
+
+/* ══════════════════════════════
+   ABOUT PAGE — META ITEMS
+══════════════════════════════ */
+.about-meta {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  margin-top: 1.75rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.meta-label {
+  font-family: var(--font-mono);
+  font-size: .68rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--violet);
+}
+
+.meta-value {
+  font-family: var(--font-mono);
+  font-size: .78rem;
+  color: var(--white);
+}
+
+.meta-value.available {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  color: var(--lime);
+}
+
+.meta-value.available .dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--lime);
+  animation: blink 1.4s step-end infinite;
+}
+
+/* ── CERT LIST ── */
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  margin-top: .5rem;
+}
+
+.cert-item {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  font-size: .9rem;
+  color: var(--muted);
+}
+
+.cert-icon {
+  color: var(--violet);
+  font-size: .85rem;
+  flex-shrink: 0;
+}
+
+/* ══════════════════════════════
+   PROJECTS — DETAIL LINKS
+══════════════════════════════ */
+.detail-links {
+  display: flex;
+  gap: .75rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.detail-link {
+  font-family: var(--font-mono);
+  font-size: .7rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--lime);
+  border: 1px solid rgba(200,255,0,.3);
+  padding: .35rem .9rem;
+  border-radius: 4px;
+  transition: all .2s;
+}
+
+.detail-link:hover {
+  background: var(--lime-lo);
+  border-color: var(--lime);
+}
+
+/* ══════════════════════════════
+   CONTACT — DIRECT LINKS
+══════════════════════════════ */
+.contact-direct {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: .9rem 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--muted);
+  font-size: .9rem;
+  transition: all .2s;
+}
+
+.contact-link:hover {
+  border-color: var(--violet);
+  color: var(--white);
+  transform: translateX(4px);
+}
+
+.contact-link-icon {
+  font-family: var(--font-mono);
+  font-size: .75rem;
+  font-weight: 700;
+  color: var(--violet);
+  min-width: 28px;
+  text-align: center;
+}
+
+.contact-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.75rem 0;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: .68rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.contact-divider::before,
+.contact-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
